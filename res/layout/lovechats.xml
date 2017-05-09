@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="240dp"
+        android:background="@android:color/holo_blue_bright"> 
+        
+        <ListView 
+            android:id="@+id/LV2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></ListView>
+    </TableRow>
+    
+    <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark">
+        
+        <EditText 
+            android:id="@+id/ET1"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:hint="输入内容"/>
+        <Button 
+            android:id="@+id/sendMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="发送"/>
+    </TableRow>
+    
+    <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        
+        <TextView 
+            android:id="@+id/state1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="当前接入设备："/>
+        <TextView 
+            android:id="@+id/state11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---"/>
+    </TableRow>
+    
+        <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        
+        <TextView 
+            android:id="@+id/state2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="当前连接状态："/>
+        <TextView 
+            android:id="@+id/state22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---"/>
+    </TableRow>
+    
+         <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        
+        <TextView 
+            android:id="@+id/state3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="当前信号强度："/>
+        <TextView 
+            android:id="@+id/state33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---"/>
+    </TableRow>
+    
+         <TableRow 
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="220dp"
+        	android:layout_marginTop="20dp">
+             
+             <Button 
+                 android:id="@+id/Back"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:background="@android:color/holo_red_light"
+                 android:text="重建客户端"/>
+         </TableRow>
+         
+         <TableRow 
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp">
+             
+             <Button 
+                 android:id="@+id/call"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="呼叫对方"/>
+         </TableRow>
+    
+    
+
+</LinearLayout>

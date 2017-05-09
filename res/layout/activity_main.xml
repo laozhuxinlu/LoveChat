@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/lovechatactivity"
+    android:orientation="vertical" >
+        
+    <Button 
+        android:id="@+id/login"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="60dp"
+        android:background="@android:color/holo_green_light"
+        android:text="Master"/>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="-50dp"
+        android:background="@android:color/darker_gray"
+        android:text="Slave" />
+    
+</LinearLayout>

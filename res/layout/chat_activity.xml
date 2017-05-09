@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+          
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/holo_green_dark">
+        <Button 
+            android:id="@+id/open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="openBT"
+            android:text="打开"/>
+        
+        <Button 
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="closeBT"
+            android:text="关闭"/>
+        
+        <Button 
+            android:id="@+id/connected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showcennected"
+            android:text="已连接"/>
+        
+        <Button 
+            android:id="@+id/scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="scanBT"
+            android:text="扫描"/>
+        
+        <Button 
+            android:id="@+id/visable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="BeVisable"
+            android:text="可检测"/>
+        </TableRow>
+        
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="350dp"
+                android:background="@android:color/holo_blue_dark" >
+                    
+                    <LinearLayout
+                         android:layout_width="fill_parent"
+    					 android:layout_height="wrap_content"
+     					 android:orientation="vertical" >
+
+                    <ListView
+                        android:id="@+id/LV1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="347dp"
+                        android:visibility="visible" />
+
+					</LinearLayout>
+           
+            
+        </TableRow>
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:background="@android:color/darker_gray">
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"
+                android:text="Ps："/>
+            
+            <TextView 
+                android:id="@+id/Ps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:text="当前无选择通讯设备"/>
+        </TableRow>
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/darker_gray">
+            
+            <Button 
+                android:id="@+id/EnterChat"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/holo_red_light"
+                android:onClick="enterLC"
+                android:textSize="30dp"
+                android:text="进入"/>
+        </TableRow>
+        
+    
+
+</LinearLayout>
